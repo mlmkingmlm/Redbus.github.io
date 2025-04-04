@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
+   z-index: 3;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.logo{
+    width: 30%;
+    /* height: 100px; */
+}
+
+.logo img{
+    width: 50%;
+    padding: 10px 0px 0px 30px;
+}
+
+.bus-ticket{
+    width: 30%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 128, 15, 0.833);
+    border-radius: 20px;
+    padding: 10px 0px;
+}
+
+.bus-ticket img{
+    width: 30%;
+}
+
+.train-ticket{
+    width: 30%;
+    text-align: center;
+    color: black;
+    padding: 10px 0px;
+}
+
+.train-ticket i{
+    font-size: 30px;
+}
+
+nav>div:hover{
+    cursor: pointer;
+}
+
+.train-ticket:hover{
+    background-color: rgba(128, 128, 128, 0.402);
+    border-radius: 10px;
+}
+
+nav div:nth-child(2) ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav ul li:hover{
+    background-color: rgba(128, 128, 128, 0.402);
+}
+
+li select{
+    border: none;
+    background-color: none;
+    padding: 5px;
+}
+
+li a{
+    color: rgb(18, 17, 17);
+    text-decoration: none;
+}
+
+li a i{
+    padding-right: 5px;
+}
+
+option i{
+    color: black;
+}
+
+.front{
+    display: flex;
+    background-image: url("./images/front.png");
+    background-size: cover;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.front h1{
+    margin-top: 150px;
+    color:green;
+    font-size: 50px;
+}
+
+.front>div{
+    display: flex;
+    margin-top: 70px;
+    background-color: white;
+    width: 80%;
+    justify-content: space-between;
+    height: 100px;
+    border-radius: 20px;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.front>div>div{
+    border-right: 2px solid rgba(0, 0, 0, 0.167);
+    height: 100%;
+}
+
+.front>div>div:nth-child(3), div>div:nth-child(4){
+    border-right:none;
+    height: 100%;
+}
+
+.box4{
+    background-color: maroon;
+    height: 100%;
+    border-radius:0px 20px 20px 0px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 section button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+section input{
+    padding: 10px;
+}
+
+section{
+    padding: 25px;
+}
+
+.box4 section{
+    padding: 0px;
+}
+
+.offers{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px  3px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1) ;
+    margin: 0px 50px;
+    position: relative;
+    top: -50px;
+    padding: 20px 40px;
+}
+
+
+.offers h1{
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.allcards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    overflow: scroll hidden;
+}
+
+.cards-body{
+    width: 600px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+.allcards div:nth-child(2){
+    background-color: pink;
+}
+
+.allcards div:nth-child(3){
+    background-color: aquamarine;
+}
+
+.allcards div:nth-child(5){
+    background-color: rgb(94, 84, 84);
+}
+
+.allcards div:nth-child(6){
+    background-color: rgb(167, 223, 198);
+}
+
+.allcards div:last-child{
+    background-color: rgb(52, 111, 206);
+}
+
+.cards-body section:first-child{
+    width: 15%;
+}
+.cards-body section:first-child img{
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.cards-body section:nth-child(2) button:first-child{
+    background-color: rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+}
+
+.cards-body section:nth-child(2) button{
+    background-color: rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 2px dotted white;
+    color: rgb(240, 236, 236);
+    margin-top: 10px;
+}
+
+.cards-body section:nth-child(2) i {
+    color: white;
+    padding-left: 10px;
+}
+
+.cards-body:hover{
+    cursor: pointer;
+}
+
+.govt{
+        margin: 0px 50px;
+        padding: 20px 40px;
+}
+
+.govt h1{
+    color: rgba(0, 0, 0, 0.511);
+    letter-spacing: 5px;
+}
+
+.rtchead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rtchead button{
+    padding: 10px 20px;
+    color: blue;
+    border-radius: 20px;
+    border:1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+}
+
+.rtchead button:hover{
+    box-shadow: inset 1px 0px 5px rgba(0, 0, 0, 0.1) ,2px 2px 5px rgba(0, 0, 0, 0.2);;
+}
+
+.rules{
+    display: flex;
+    overflow: scroll hidden;
+    margin-top: 20px;
+    /* padding-left: 20px; */
+    
+}
+
+.rules>div{
+    background-color: rgba(255, 192, 203, 0.281);
+    margin-left: 20px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.rules div section{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width:350px;
+}
+
+.rules div section div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rules div section div:first-child img{
+    border-radius: 50%;
+}
+
+.rules div section div:first-child h1{
+    color: black;
+}
+
+.rules div section div:first-child p{
+        background-color: green;
+        border-radius: 10px;
+        padding: 5px 7px;
+        color: white;
+        font-size: 20px;
+}
+
+.rules div section>p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+
+.rules div section div:last-child{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.285);
+    padding: 4px 0px;
+    border-radius: 20px;
+}
+
+.rules div section div:last-child img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.rules div section div:last-child p{
+    font-size: 17px;
+    padding-top: 2px;
+}
+
+.rules>div h3{
+    text-align: center;
+    padding: 5px 0px ;
+}
+
+.tickets{
+    display: flex;
+    margin: 60px 60px 20px 60px;
+}
+
+.content p:first-child{
+        font-size: 50px;
+        line-height: 55px;
+}
+
+.content{
+    padding-left: 50px;
+}
+
+.content div{
+    display: flex;
+    border-bottom: 2px solid maroon;
+    padding: 10px 0px;
+    width: 30%;
+}
+
+.content div p{
+    margin-left: 20px;
+}
+
+.book{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content ul li:first-child{
+    list-style-image:url(./images/railAuthorized.png) ;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.content ul li:nth-child(2){
+    list-style-image:url(./images/railHasslefree.svg) ;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.content ul li:last-child{
+    list-style-image:url(./images/railHasslefree.svg);
+    padding-left: 20px;
+    padding-top: 25px;
+    color: black;
+    font-size: 20px;
+}
+
+.content button{
+    margin-top: 60px;
+    background-color: maroon;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.img div{
+    background-color: rgba(255, 192, 203, 0.226);
+    height: 500px;
+    width: 90%;
+    position: relative;
+    top: -50%;
+    left: 15%;
+    border-radius: 0px 5px;
+}
+
+.app-download{
+    margin-top: -400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    background-image: url(./images/travel-bag.jfif);
+    background-size: cover;
+    border-radius: 40px;
+    padding: 20px;
+    height: 500px;
+}
+
+.app-download>h1{
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+.app-download>div{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: red; */
+    justify-content: space-around;
+}
+
+.app-download>div section:first-child{
+    background-color: white;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.app-download>div section:first-child ul li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.app-download>div section:first-child ul{
+    list-style-type:square;
+}
+
+.app-download>div section:first-child>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.star p{
+    padding-top: 10px;
+}
+
+.app-download>div section:nth-child(2), .app-download>div section:last-child{
+    color: white;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.app-download>div section:nth-child(2) img, .app-download>div section:last-child img{
+    margin-top: 20px;
+    display: block;
+}
+
+.poster{
+    margin: 80px 60px;
+}
+
+.poster img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.country{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px;
+}
+
+.head{
+    margin: 80px 0px 20px 60px;
+}
+
+.country section{
+    text-align: center;
+    cursor: pointer;
+}
+
+.country section h3{
+    padding: 10px;
+}
+
+.country section:hover{
+   h3{
+    background-color: rgba(128, 128, 128, 0.381);
+    border-radius: 10px;
+   }
+}
+
+.online {
+    max-height: 200px; /* Initially visible part */
+    overflow: hidden;
+    /* transition: max-height 0.5s ease-in-out; */
+    margin: 60px 60px 0px;
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide checkbox */
+}
+
+input[type="checkbox"]:checked ~ .online {
+    max-height: 500px; /* Expanded height */
+}
+
+.read-more-label {
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+    margin:0px 0px 30px 60px;
+}
+
+/* Change text dynamically */
+input[type="checkbox"]:checked ~ .read-more-label::after {
+    content: " Read Less";
+}
+
+input[type="checkbox"]:not(:checked) ~ .read-more-label::after {
+    content: " Read More";
+}
+
+.online p{
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+
+footer{
+    background-color: rgba(128, 128, 128, 0.45);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
